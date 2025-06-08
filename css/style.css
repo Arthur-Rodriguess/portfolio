@@ -15,7 +15,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgba(0, 0, 0, 1);
-    height: 100dvh;
+    height: 100vh;
     /* overflow: hidden; */
 }
 
@@ -27,6 +27,10 @@ header > h1 {
     align-items: center;
     justify-content: center;
     margin: 80px 0 30px;
+}
+
+.quebra-linha {
+    display: inline;
 }
 
 .apresentacao {
@@ -100,4 +104,26 @@ a .github {
 
 a .github:hover {
     content: url(../img/github-color-icon.png);
+}
+
+@media(max-width: 1190px) {
+    body {
+        background-image: url('../img/background-responsivo.jpg');
+    }
+
+    .apresentacao {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 80px;
+    }
+
+    .contato {
+        position: inherit;
+        margin-top: 50px;
+    }
+
+    .icones {
+        position: inherit;
+        margin-bottom: 60px;
+    }
 }
